@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<style type="text/css">
+
+    div[class*="anywhere"] {
+      background: #ffff00;
+    }
+
+    div[class^="begin"] {  
+      background: #ffff00;	
+    }
+
+    div[class$="end"] {  
+      background: #ffff00;	
+    }
+
+    div[class~="matches"]{
+      background: red;
+    }
+    div[class|="separated"]{
+      background: green;
+
+    }
+</style>
+
+
+ 
+<div class="hrekeanywhereketestertg">
+	<h1>containing class name anywhere</h1>
+</div>
+
+<div class="begin-else-class rre">
+	<h1>Containing the class name begining</h1>
+</div>
+<div class="end-else-class_end">
+	<h1>Containing the class name in End</h1>
+</div>
+<div class="erg matches en">
+	<h1>finding matches in space separated lists</h1>
+</div>
+
+<div class="separated-en">
+	<h1>contain the word in start separated by hyphen( - )  class</h1>
+</div>
+
+
+</body>
+</html>
